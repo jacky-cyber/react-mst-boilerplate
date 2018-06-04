@@ -1,0 +1,28 @@
+
+{
+  "presets": ["env", "react", "stage-0"],
+  "plugins": [
+    [
+      "emotion",
+      { 
+        "hoist": true
+      }
+    ],
+    "lodash",
+    "transform-decorators-legacy",
+    "transform-async-generator-functions",
+    [
+      "react-intl",
+      {
+        "messagesDir": "./src/i18n/build/messages"
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ]
+  ]
+}
